@@ -1,0 +1,55 @@
+.risk-table {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.risk-table h3 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.risk-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.risk-table th, .risk-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.risk-table th {
+  background-color: #f8f9fa;
+  font-weight: bold;
+}
+
+.risk-table .clickable-row:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.risk-table .risk-level {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.risk-table .risk-level.low {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.risk-table .risk-level.medium {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.risk-table .risk-level.high {
+  background-color: #f8d7da;
+  color: #721c24;
+}
