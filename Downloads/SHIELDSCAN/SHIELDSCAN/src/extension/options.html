@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ethics Scanner Pro - Settings</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background: #0a0f1e; color: white; font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="p-12">
+    <div class="max-w-2xl mx-auto bg-white/5 border border-white/10 backdrop-blur-xl rounded-3xl p-10">
+        <h1 class="text-3xl font-black mb-8">System Settings</h1>
+        
+        <div class="space-y-8">
+            <div class="flex items-center justify-between">
+                <div>
+                    <h3 class="font-bold">Auto-Scan</h3>
+                    <p class="text-sm text-white/50">Automatically scan pages on load</p>
+                </div>
+                <input type="checkbox" checked class="w-10 h-5 rounded-full bg-emerald-500 appearance-none cursor-pointer">
+            </div>
+
+            <div class="space-y-4">
+                <div class="flex justify-between">
+                    <h3 class="font-bold">Scanning Sensitivity</h3>
+                    <span class="text-emerald-400 font-bold">70%</span>
+                </div>
+                <input type="range" min="1" max="100" value="70" class="w-full h-2 bg-white/10 rounded-lg appearance-none cursor-pointer accent-emerald-500">
+            </div>
+
+            <div class="space-y-4 pt-8 border-t border-white/5">
+                <h3 class="font-bold">White-listed Domains</h3>
+                <div class="bg-black/20 rounded-xl p-4 text-sm font-mono text-emerald-400">
+                    google.com, github.com, apple.com
+                </div>
+                <button class="text-xs font-bold text-white/30 uppercase tracking-widest hover:text-white transition-colors">Manage List</button>
+            </div>
+        </div>
+
+        <button class="mt-12 w-full bg-emerald-500 py-4 rounded-xl font-black uppercase tracking-widest hover:bg-emerald-600 transition-all">Save Configuration</button>
+    </div>
+</body>
+</html>
